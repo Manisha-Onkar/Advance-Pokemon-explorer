@@ -1,0 +1,37 @@
+.pokemon-detail-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pokemon-detail-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .pokemon-detail-page img {
+    max-width: 200px;
+  }
+  
+  .pokemon-stats,
+  .pokemon-abilities,
+  .pokemon-moves,
+  .pokemon-evolution {
+    margin-top: 20px;
+  }
+  
+  .pokemon-stats ul,
+  .pokemon-abilities ul,
+  .pokemon-moves ul,
+  .pokemon-evolution ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pokemon-stats li,
+  .pokemon-abilities li,
+  .pokemon-moves li,
+  .pokemon-evolution li {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  

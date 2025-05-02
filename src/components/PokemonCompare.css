@@ -1,0 +1,29 @@
+.compare-container {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .compare-header {
+    text-align: center;
+  }
+  
+  .compare-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .compare-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .compare-btn:hover {
+    background-color: #0056b3;
+  }
+  
