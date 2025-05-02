@@ -1,50 +1,86 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Advanced Pokémon Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An advanced, feature-rich Pokémon explorer built with React, TypeScript, and the PokeAPI. This project is the second assignment in a two-part series and expands on the previous version by adding advanced data display, interactivity, and persistent state.
 
-## Available Scripts
+## 🔎 Overview
 
-In the project directory, you can run:
+This app allows users to:
 
-### `npm start`
+- Browse Pokémon with pagination
+- Search and filter by multiple types
+- Sort by ID and name
+- View detailed Pokémon data including stats, abilities, moves, and evolution chains
+- Mark favorites and persist them using localStorage
+- Compare Pokémon side-by-side
+- Load a random Pokémon with one click
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### ✅ Enhanced List View
 
-### `npm test`
+- Pagination (10, 20, 50 items per page)
+- Sorting by ID and Name (A-Z, Z-A)
+- Multi-select type filtering
+- Responsive grid display
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧬 Detailed Pokémon View
 
-### `npm run build`
+- Complete stats: HP, Attack, Defense, etc.
+- Abilities and move list
+- Evolution chain
+- Clean route-based navigation using React Router
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⭐ Favorites System
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Add/remove Pokémon from favorites
+- Persistent favorites via `localStorage`
+- Separate “Favorites” view
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ⚔️ Comparison Tool
 
-### `npm run eject`
+- Select two Pokémon to compare stats side-by-side
+- Clear and intuitive comparison UI
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🎲 Random Pokémon
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Instantly load a random Pokémon from the dataset
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ⚠️ Error Boundaries
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Wrapped app in error boundaries to prevent full app crashes
 
-## Learn More
+## 🧠 Technical Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React** with **TypeScript**
+- **React Router** for navigation
+- **Context API** for state management
+- **Custom Hooks** for logic reuse
+- **TailwindCSS** for styling
+- **PokeAPI** for data
+- **useMemo/useCallback** for performance optimization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-=======
-# Advance-Pokemon-explorer
->>>>>>> ef3b27e6bb5f70af790baa6e156a62271d050193
+
+## ⚠️ Challenges Faced
+
+- **PokeAPI Complexity**: Handling deeply nested structures like evolution chains required recursive functions and careful async control.
+- **TypeScript Strictness**: Dealing with inconsistent or optional API fields meant writing robust type definitions and fallbacks.
+- **Performance Tuning**: Avoiding unnecessary re-renders in large lists by leveraging `useMemo`, `useCallback`, and `React.memo`.
+- **Favorites Persistence**: Syncing UI state with `localStorage` while using Context API without causing race conditions.
+- **Comparison Logic**: Creating a seamless UI for comparing stats and handling edge cases like incomplete data.
+- **Merge Conflicts**: Faced initial push issues due to remote `README.md`; resolved by merging and resolving conflicts manually.
+
+## 🛠️ Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Manisha-Onkar/Advance-Pokemon-explorer.git
+
+# Navigate into the project
+cd Advance-Pokemon-explorer
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
